@@ -12,6 +12,8 @@ total_profit = 0
 total_change_profits = 0
 initial_profit = 0
 
+os.chdir(os.path.dirname(__file__))
+
 with open(PyBankcsv, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader)
